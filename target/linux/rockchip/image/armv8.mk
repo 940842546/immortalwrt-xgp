@@ -246,8 +246,15 @@ endef
 
 define Device/nlnet_xgp
 $(call Device/nlnet_common)
-  DEVICE_MODEL := XiGuaPi
+  DEVICE_MODEL := XiGuaPi V3
   DEVICE_DTS = rockchip/rk3568-xgp-v3
+endef
+TARGET_DEVICES += nlnet_xgp
+
+define Device/nlnet_xgp_v2
+$(call Device/nlnet_common)
+  DEVICE_MODEL := XiGuaPi V2
+  DEVICE_DTS = rockchip/rk3568-xgp
 endef
 TARGET_DEVICES += nlnet_xgp
 

@@ -253,6 +253,7 @@ TARGET_DEVICES += nlnet_xgp
 
 define Device/nlnet_xgp_v2
 $(call Device/nlnet_common)
+  UBOOT_DEVICE_NAME := xgp-v2-rk3568
   DEVICE_MODEL := XiGuaPi V2
   DEVICE_DTS = rockchip/rk3568-xgp
 endef

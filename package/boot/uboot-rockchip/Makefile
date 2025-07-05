@@ -285,6 +285,13 @@ define U-Boot/xgp-rk3568
     nlnet_xgp
 endef
 
+define U-Boot/xgp-v2-rk3568
+  $(U-Boot/rk3568/Default)
+  NAME:=XGP Board
+  BUILD_DEVICES:= \
+    nlnet_xgp_v2
+endef
+
 define U-Boot/photonicat-rk3568
   $(U-Boot/rk3568/Default)
   NAME:=Photonicat
@@ -436,6 +443,7 @@ UBOOT_TARGETS := \
   nanopi-r5c-rk3568 \
   nanopi-r5s-rk3568 \
   xgp-rk3568 \
+  xgp-v2-rk3568 \
   photonicat-rk3568 \
   radxa-e25-rk3568 \
   roc-pc-rk3568 \

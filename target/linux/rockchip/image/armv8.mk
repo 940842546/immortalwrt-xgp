@@ -256,7 +256,7 @@ $(call Device/nlnet_common)
   DEVICE_MODEL := XiGuaPi V2
   DEVICE_DTS = rockchip/rk3568-xgp
 endef
-TARGET_DEVICES += nlnet_xgp
+TARGET_DEVICES += nlnet_xgp_v2
 
 define Device/lyt_t68m
   DEVICE_VENDOR := LYT

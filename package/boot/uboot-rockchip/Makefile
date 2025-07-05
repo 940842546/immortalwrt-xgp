@@ -287,7 +287,7 @@ endef
 
 define U-Boot/xgp-v2-rk3568
   $(U-Boot/rk3568/Default)
-  NAME:=XGP Board
+  NAME:=XGP Board V2
   BUILD_DEVICES:= \
     nlnet_xgp_v2
 endef

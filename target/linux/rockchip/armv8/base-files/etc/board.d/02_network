@@ -20,6 +20,7 @@ rockchip_setup_interfaces()
 	friendlyarm,nanopi-r4s-enterprise|\
 	friendlyarm,nanopi-r6c|\
 	nlnet,xgp|\
+	nlnet,xiguapi-v3|\
 	radxa,rockpi-e|\
 	xunlong,orangepi-r1-plus|\
 	xunlong,orangepi-r1-plus-lts)

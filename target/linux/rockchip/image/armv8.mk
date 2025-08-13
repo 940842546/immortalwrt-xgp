@@ -251,6 +251,17 @@ $(call Device/nlnet_common)
 endef
 TARGET_DEVICES += nlnet_xgp
 
+define Device/nlnet_xiguapi-v3
+  DEVICE_VENDOR := NLnet
+  DEVICE_MODEL := XiGuaPi V3
+  SOC := rk3568
+  DEVICE_DTS = rockchip/rk3568-xiguapi-v3
+  UBOOT_DEVICE_NAME := xgp-rk3568
+  BOOT_FLOW := pine64-img
+  DEVICE_PACKAGES := kmod-r8125 kmod-hwmon-pwmfan
+endef
+TARGET_DEVICES += nlnet_xiguapi-v3
+
 define Device/lyt_t68m
   DEVICE_VENDOR := LYT
   DEVICE_MODEL := T68M

@@ -79,6 +79,7 @@
 	};
 
 	fan: pwm-fan {
+		hwmon;
 		compatible = "pwm-fan";
 		#cooling-cells = <2>;
 		cooling-levels = <30 75 135 195 255>;

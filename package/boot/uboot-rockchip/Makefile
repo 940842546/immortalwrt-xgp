@@ -322,6 +322,12 @@ define U-Boot/sige3-rk3568
     armsom_sige3
 endef
 
+define U-Boot/xgp-rk3568
+  $(U-Boot/rk3568/Default)
+  NAME:=XGP Board
+  BUILD_DEVICES:= \
+    nlnet_xiguapi-v3 
+endef
 
 # RK358x boards
 

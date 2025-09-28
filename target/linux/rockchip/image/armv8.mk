@@ -258,6 +258,17 @@ define Device/mmbox_anas3035
 endef
 TARGET_DEVICES += mmbox_anas3035
 
+define Device/nlnet_xiguapi-v3
+  DEVICE_VENDOR := NLnet
+  DEVICE_MODEL := XiGuaPi V3
+  SOC := rk3568
+  DEVICE_DTS = rockchip/rk3568-xiguapi-v3
+  UBOOT_DEVICE_NAME := xgp-rk3568
+  BOOT_FLOW := pine64-img
+  DEVICE_PACKAGES := kmod-r8125 kmod-hwmon-pwmfan
+endef
+TARGET_DEVICES += nlnet_xiguapi-v3
+
 define Device/pine64_rock64
   DEVICE_VENDOR := Pine64
   DEVICE_MODEL := Rock64
